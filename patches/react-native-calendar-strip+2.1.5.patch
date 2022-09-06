@@ -1,0 +1,27 @@
+diff --git a/node_modules/react-native-calendar-strip/index.d.ts b/node_modules/react-native-calendar-strip/index.d.ts
+index c742d02..75bd8b2 100644
+--- a/node_modules/react-native-calendar-strip/index.d.ts
++++ b/node_modules/react-native-calendar-strip/index.d.ts
+@@ -127,6 +127,7 @@ interface CalendarStripProps {
+   weekendDateNumberStyle?: StyleProp<TextStyle>;
+   highlightDateNameStyle?: StyleProp<TextStyle>;
+   highlightDateNumberStyle?: StyleProp<TextStyle>;
++  highlightDateNumberContainerStyle?: StyleProp<ViewStyle>;
+   disabledDateNameStyle?: StyleProp<TextStyle>;
+   disabledDateNumberStyle?: StyleProp<TextStyle>;
+   markedDatesStyle?: StyleProp<TextStyle>;
+diff --git a/node_modules/react-native-calendar-strip/src/CalendarDay.js b/node_modules/react-native-calendar-strip/src/CalendarDay.js
+index 4813ba9..1002b0b 100644
+--- a/node_modules/react-native-calendar-strip/src/CalendarDay.js
++++ b/node_modules/react-native-calendar-strip/src/CalendarDay.js
+@@ -489,9 +489,9 @@ class CalendarDay extends Component {
+                 >
+                   {date.date()}
+                 </Text>
+-                { this.renderMarking() }
+               </View>
+             )}
++            { this.renderMarking() }
+           </View>
+         </TouchableOpacity>
+       );

@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "ritik",
+    "slug": "ritik",
+    "scheme": "mycoolredirect",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "splash": {
+      "image": "./assets/ritik-black-yellow.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#fff"
+    },
+    "notification": {
+      "icon": "./assets/playstore.png"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ritik.fitnessApp"
+    },
+    "android": {
+      "permissions": [
+        "CAMERA",
+        "WRITE_EXTERNAL_STORAGE",
+        "CAMERA_ROLL",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "READ_PHONE_STATE",
+        "INTERNET",
+        "WAKE_LOCK"
+      ],
+      "package": "com.ritik.fitnessApp",
+      "versionCode": 1,
+      "icon": "./assets/playstore.png"
+    }
+  }
+}

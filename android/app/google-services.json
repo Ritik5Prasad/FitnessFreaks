@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "28227975311",
+    "project_id": "fitnessapp-203d2",
+    "storage_bucket": "fitnessapp-203d2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:28227975311:android:2a34dcc1d76f638dec18fa",
+        "android_client_info": {
+          "package_name": "com.ritik.fitnessApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "28227975311-uu5uiekbe30nakpnu08t1h10us8usq2o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvmhnG2gbJXtryYEIkQRiekhKCRRWnMLE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "28227975311-uu5uiekbe30nakpnu08t1h10us8usq2o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
