@@ -10,7 +10,7 @@ import {
   TextInput,
   Button,
 } from "react-native";
-import { db } from "../../firebase";
+import { db } from "../../utils/firebase";
 import { RFPercentage, RFValue } from "react-native-responsive-fontsize";
 
 import { LinearGradient } from "expo-linear-gradient";
@@ -695,7 +695,7 @@ function ViewWorkout({ route, navigation }) {
                 right: RFValue(15, 816),
                 marginTop: RFValue(15, 816),
               }}
-              source={require("../../assets/doubleleftarrowheads.png")}
+              source={require("../../../assets/doubleleftarrowheads.png")}
             />
           </LinearGradient>
         </TouchableOpacity>

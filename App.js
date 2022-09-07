@@ -3,7 +3,7 @@ import "react-native-get-random-values";
 import React, { useRef, useState, useEffect } from "react";
 import { View, SafeAreaView, Text } from "react-native";
 import * as Font from "expo-font";
-import MainFlow from "./MainFlow";
+import MainFlow from "./Navigations/MainFlow";
 import { DefaultTheme, Provider as PaperProvider } from "react-native-paper";
 import { LogBox } from "react-native";
 import { PersistGate } from "redux-persist/integration/react";
@@ -11,7 +11,7 @@ import { PersistGate } from "redux-persist/integration/react";
 LogBox.ignoreAllLogs();
 LogBox.ignoreLogs(["Setting a timer", "Unhandled promise rejection"]);
 
-import { persistor, store } from "./app/store";
+import { persistor, store } from "./src/app/store";
 import { Provider } from "react-redux";
 import AppLoading from "expo-app-loading";
 

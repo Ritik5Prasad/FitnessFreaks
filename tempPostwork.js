@@ -395,7 +395,7 @@ export default function PostWorkoutDetails() {
                                     src={
                                       workout.thumbnail_url
                                         ? `${workout.thumbnail_url}`
-                                        : "../assets/illustration.jpeg"
+                                        : "../../assets/illustration.jpeg"
                                     }
                                   />
                                 </div>
@@ -470,7 +470,7 @@ export default function PostWorkoutDetails() {
                                             width: 20,
                                             height: 20,
                                           }}
-                                          src="../assets/up.png"
+                                          src="../../assets/up.png"
                                         />
                                       ) : (
                                         <img
@@ -478,7 +478,7 @@ export default function PostWorkoutDetails() {
                                             width: 20,
                                             height: 20,
                                           }}
-                                          src="../assets/down.png"
+                                          src="../../assets/down.png"
                                         />
                                       )}
                                     </div>
@@ -740,7 +740,7 @@ export default function PostWorkoutDetails() {
                                     src={
                                       workout.thumbnail_url
                                         ? ` ${workout.thumbnail_url}`
-                                        : "../assets/illustration.jpeg"
+                                        : "../../assets/illustration.jpeg"
                                     }
                                   />
                                 </div>
@@ -946,7 +946,7 @@ export default function PostWorkoutDetails() {
                                           width: 20,
                                           height: 20,
                                         }}
-                                        src="../assets/up.png"
+                                        src="../../assets/up.png"
                                       />
                                     ) : (
                                       <img
@@ -954,7 +954,7 @@ export default function PostWorkoutDetails() {
                                           width: 20,
                                           height: 20,
                                         }}
-                                        src="../assets/down.png"
+                                        src="../../assets/down.png"
                                       />
                                     )}
                                   </div>
