@@ -130,8 +130,8 @@ android {
     compileSdkVersion rootProject.ext.compileSdkVersion
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+      sourceCompatibility JavaVersion.VERSION_1_8
+	targetCompatibility JavaVersion.VERSION_1_8
     }
 
     packagingOptions {
@@ -154,6 +154,7 @@ android {
 
 
     defaultConfig {
+        
         applicationId 'com.ritik.fitnessApp'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
@@ -217,6 +218,7 @@ android {
 }
 
 dependencies {
+    compile(project(':react-native-incall-manager'))
     implementation platform('com.google.firebase:firebase-bom:28.4.0')
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation 'androidx.appcompat:appcompat:1.1.0-rc01'

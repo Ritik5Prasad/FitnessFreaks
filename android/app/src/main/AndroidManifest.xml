@@ -2,7 +2,19 @@
 xmlns:tools="http://schemas.android.com/tools"
 package="com.ritik.fitnessApp">
   <uses-permission android:name="android.permission.INTERNET"/>
-  
+  <uses-feature android:name="android.hardware.camera" />
+<uses-feature android:name="android.hardware.camera.autofocus" />
+<uses-feature android:name="android.hardware.audio.output" />
+<uses-feature android:name="android.hardware.microphone" />
+
+<uses-permission android:name="android.permission.BLUETOOTH" android:maxSdkVersion="30" />
+<uses-permission android:name="android.permission.BLUETOOTH_ADMIN" android:maxSdkVersion="30" />
+<uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+<uses-permission android:name="android.permission.RECORD_AUDIO" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+<uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
   <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
   <uses-permission android:name="android.permission.CAMERA"/>
@@ -40,6 +52,7 @@ package="com.ritik.fitnessApp">
       android:windowSoftInputMode="adjustResize"
       android:theme="@style/AppTheme"
       android:screenOrientation="portrait"
+      android:exported="true"
     >
       <intent-filter>
         <action android:name="android.intent.action.MAIN"/>
@@ -68,6 +81,8 @@ package="com.ritik.fitnessApp">
       <meta-data
         android:name="com.google.firebase.messaging.default_notification_icon"
         android:resource="@mipmap/ic_notification" />
-
+<service
+	android:name="app.notifee.core.ForegroundService"
+	android:foregroundServiceType="mediaProjection|camera|microphone" />
   </application>
 </manifest>

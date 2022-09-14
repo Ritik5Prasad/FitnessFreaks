@@ -60,7 +60,8 @@ import PreviousPhysiotherapy from "../src/screens/PreviousPhysiotherapy";
 import ParticularPhysiotherapy from "../src/screens/ParticularPhysiotherapy";
 import AthleteChats from "../src/screens/AthleteChats";
 import ListOfCoaches from "../src/screens/ListOfCoaches";
-
+import LoginScreen from "../src/features/LoginScreen";
+import CallScreen from '../src/features/CallScreen'
 const HomeStack = createStackNavigator();
 const SettingsStack = createStackNavigator();
 const WorkoutStack = createStackNavigator();
@@ -1057,6 +1058,51 @@ const MessagingNavigator = ({ navigation }) => {
                 style={{ paddingLeft: 100 }}
                 onPress={() => navigation.toggleDrawer()}
               />
+            </View>
+          ),
+        }}
+      />
+
+<MessagingStack.Screen
+        name="LoginScreen"
+        component={LoginScreen}
+        options={{
+          headerTintColor: "#fff",
+          headerTitleStyle: {
+            color: "#fff",
+          },
+          headerLeft: () => (
+            <View style={{ marginLeft: RFValue(15, 816), marginTop: 5 }}>
+              <Icon
+                name="bars"
+                type="font-awesome-5"
+                size={24}
+                style={{ paddingLeft: 100 }}
+                onPress={() => navigation.toggleDrawer()}
+              />
+              <Text>CAll</Text>
+            </View>
+          ),
+        }}
+      />
+      <MessagingStack.Screen
+        name="CallScreen"
+        component={CallScreen}
+        options={{
+          headerTintColor: "#fff",
+          headerTitleStyle: {
+            color: "#fff",
+          },
+          headerLeft: () => (
+            <View style={{ marginLeft: RFValue(15, 816), marginTop: 5 }}>
+              <Icon
+                name="bars"
+                type="font-awesome-5"
+                size={24}
+                style={{ paddingLeft: 100 }}
+                onPress={() => navigation.toggleDrawer()}
+              />
+              <Text>CAll</Text>
             </View>
           ),
         }}

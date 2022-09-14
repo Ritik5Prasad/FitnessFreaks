@@ -58,7 +58,8 @@ import TrainingAssessment from "../src/screens/TrainingAssessment";
 import PreviousPhysiotherapy from "../src/screens/PreviousPhysiotherapy";
 import ParticularPhysiotherapy from "../src/screens/ParticularPhysiotherapy";
 import AthletePayments from "../src/screens/Payments";
-
+import LoginScreens from '../src/features/LoginScreen'
+import CallScreen from '../src/features/CallScreen'
 import PostAddScreen from "../src/screens/PostAddScreen";
 
 import AssignWorkout from "../src/screens/coach/AssignWorkout";
@@ -877,9 +878,10 @@ const HomeNavigator = ({ navigation }) => {
           ),
         }}
       />
-      {/* <HomeStack.Screen
-        name="VideoCall"
-        component={VideoCall}
+
+      <HomeStack.Screen
+        name="LoginScreens"
+        component={LoginScreens}
         options={{
           headerTintColor: "#fff",
           headerTitleStyle: {
@@ -897,7 +899,29 @@ const HomeNavigator = ({ navigation }) => {
             </View>
           ),
         }}
-      /> */}
+      />
+      
+      <HomeStack.Screen
+        name="CallScreen"
+        component={CallScreen}
+        options={{
+          headerTintColor: "#fff",
+          headerTitleStyle: {
+            color: "#fff",
+          },
+          headerLeft: () => (
+            <View style={{ marginLeft: RFValue(15, 816), marginTop: 5 }}>
+              <Icon
+                name="bars"
+                type="font-awesome-5"
+                size={24}
+                style={{ paddingLeft: 100 }}
+                onPress={() => navigation.toggleDrawer()}
+              />
+            </View>
+          ),
+        }}
+      />
 
       <HomeStack.Screen
         name="Settings"
@@ -953,6 +977,50 @@ const ChatNavigator = ({ navigation }) => {
           ),
         }}
       />
+       
+       <ChatStack.Screen
+        name="LoginScreens"
+        component={LoginScreens}
+        options={{
+          headerTintColor: "#fff",
+          headerTitleStyle: {
+            color: "#fff",
+          },
+          headerLeft: () => (
+            <View style={{ marginLeft: RFValue(15, 816), marginTop: 5 }}>
+              <Icon
+                name="bars"
+                type="font-awesome-5"
+                size={24}
+                style={{ paddingLeft: 100 }}
+                onPress={() => navigation.toggleDrawer()}
+              />
+            </View>
+          ),
+        }}
+      />
+      <ChatStack.Screen
+        name="CallScreen"
+        component={CallScreen}
+        options={{
+          headerTintColor: "#fff",
+          headerTitleStyle: {
+            color: "#fff",
+          },
+          headerLeft: () => (
+            <View style={{ marginLeft: RFValue(15, 816), marginTop: 5 }}>
+              <Icon
+                name="bars"
+                type="font-awesome-5"
+                size={24}
+                style={{ paddingLeft: 100 }}
+                onPress={() => navigation.toggleDrawer()}
+              />
+            </View>
+          ),
+        }}
+      />
+
       <ChatStack.Screen
         name="Chat"
         component={Chat}

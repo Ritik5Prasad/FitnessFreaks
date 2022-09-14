@@ -256,7 +256,7 @@ function LoginScreen({ navigation }) {
       fetch("https://rongoeirnet.herokuapp.com/getexercise")
         .then((response) => response.json())
         .then((responseJson) => {
-          console.log("getExerciseAndStore", responseJson);
+          //console.log("getExerciseAndStore", responseJson);
 
           dispatch(setExerciseList(responseJson.data));
           var firebaseList = [];

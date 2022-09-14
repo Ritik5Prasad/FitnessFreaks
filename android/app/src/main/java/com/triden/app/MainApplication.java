@@ -16,13 +16,14 @@ import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
 import com.facebook.soloader.SoLoader;
+import com.zxcpoiu.incallmanager.InCallManagerPackage;
+
 
 import expo.modules.ApplicationLifecycleDispatcher;
 import expo.modules.ReactNativeHostWrapper;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
-// import com.reactnativejitsimeet.RNJitsiMeetPackage;  // <--- Add this line
 
 
 
@@ -35,13 +36,13 @@ public class MainApplication extends Application implements ReactApplication {
       return BuildConfig.DEBUG;
     }
 
-    @Override
+  
     protected List<ReactPackage> getPackages() {
       @SuppressWarnings("UnnecessaryLocalVariable")
       List<ReactPackage> packages = new PackageList(this).getPackages();
       return packages;
     }
-
+     
     @Override
     protected String getJSMainModuleName() {
       return "index";
@@ -75,6 +76,7 @@ public class MainApplication extends Application implements ReactApplication {
    * @param context
    * @param reactInstanceManager
    */
+   
   private static void initializeFlipper(
       Context context, ReactInstanceManager reactInstanceManager) {
     if (BuildConfig.DEBUG) {
@@ -98,4 +100,7 @@ public class MainApplication extends Application implements ReactApplication {
       }
     }
   }
+
+
+
 }

@@ -524,7 +524,30 @@ function CoachHomeScreen(props) {
                     Open Messages
                   </Text>
                 </TouchableOpacity>
-              
+                
+                <TouchableOpacity
+                  style={{
+                    backgroundColor: "#C19F1E",
+                    marginRight: RFValue(10, 816),
+                    borderRadius: 50,
+                    height: RFValue(33, 816),
+                    width: "40%",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                  onPress={() =>
+                    props.navigation.navigate("LoginScreens")
+                  }
+                >
+                  <Text
+                    style={{
+                      color: "white",
+                      fontSize: RFValue(14, 816),
+                    }}
+                  >
+                    Video Call
+                  </Text>
+                </TouchableOpacity>
               </View>
             </View>
 

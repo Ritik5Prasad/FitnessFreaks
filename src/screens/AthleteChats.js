@@ -182,6 +182,14 @@ const AthleteChats = ({ route, navigation }) => {
                   <TouchableOpacity
                     style={{ marginRight: RFValue(20, 816) }}
                     onPress={() =>
+                      navigation.navigate("LoginScreen")
+                    }
+                  >
+                    <Image source={require("../../assets/video.png")} />
+                  </TouchableOpacity>
+                  <TouchableOpacity
+                    style={{ marginRight: RFValue(20, 816) }}
+                    onPress={() =>
                       navigation.navigate("Chat", {
                         from_id: userData?.id,
                         to_id: coach.id,
